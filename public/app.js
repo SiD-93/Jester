@@ -4,8 +4,12 @@ angular.module('Jester', ['ngCookies', 'ngResource', 'ngMessages', 'ngRoute', 'm
 
   $routeProvider
     .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'views/main.html',
       controller: 'MainCtrl'
+    })
+    .when('/home', {
+      templateUrl: 'views/home.html',
+      controller: 'HomeCtrl'
     })
     .when('/shows/:id', {
       templateUrl: 'views/detail.html',

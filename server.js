@@ -125,13 +125,13 @@ app.post('/api/signup', function(req, res, next) {
   });
   user.save(function(err) {
     if (err) return next(err);
-    res.send(200);
+    res.sendStatus(200);
   });
 });
 
 app.get('/api/logout', function(req, res, next) {
   req.logout();
-  res.send(200);
+  res.sendStatus(200);
 });
 
 app.use(function(req, res, next) {
