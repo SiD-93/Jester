@@ -6,3 +6,4 @@
 - [ ] Email notifications?
 - [ ] Optimize.
 - [ ] Trim package.json file (I'm looking at you Gulp).
+- [x] Get own API key.

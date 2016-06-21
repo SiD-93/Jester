@@ -191,7 +191,8 @@ app.post('/api/shows', function (req, res, next) {
     .toLowerCase()
     .replace(/ /g, '_')
     .replace(/[^\w-]+/g, '');
-  var apiKey = '9EF1D1E7D28FDA0B';
+
+  var apiKey = '2F1EE9982F7102B6';
   var parser = xml2js.Parser({
     explicitArray: false,
     normalizeTags: true
@@ -263,7 +264,7 @@ app.post('/api/shows', function (req, res, next) {
       }
       //var alertDate = Date.create('Next ' + show.airsDayOfWeek + ' at ' + show.airsTime).rewind({ hour: 2});
       //agenda.schedule(alertDate, 'send email alert', show.name).repeatEvery('1 week');
-      res.send(200);
+      res.sendStatus(200);
     });
   });
 });
